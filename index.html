@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Graph-Based Navigator</title>
+    <style>
+      #map {
+        height: 90vh;
+        width: 100%;
+      }
+      #controls {
+        text-align: center;
+        margin: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align:center;">Graph-Based Shortest Path Navigator</h2>
+    <div id="map"></div>
+    <div id="controls">
+      <p id="distance"></p>
+      <button onclick="resetMap()">Reset</button>
+    </div>
+
+    <script
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDagf2RJvP1DszxtvEPLAKBVjWNPqsPNxY&callback=initMap"
+      async
+      defer
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
